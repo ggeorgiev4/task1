@@ -1,0 +1,49 @@
+body{
+	background: #ececec;
+	padding:20px;
+	overflow-x:hidden;
+}
+h2{
+	margin-bottom: 15px;
+	padding-bottom: 15px;
+	border-bottom: 1px solid #ccc;
+}
+a,a:hover,a:focus{
+	text-decoration: none;
+}
+.hidden{
+	display: none;
+}
+.warning{
+	color:red;
+}
+.btn{
+	min-width: 120px;
+}
+.btn.next{
+	background-color:#3B5998;
+}
+.btn.skip{
+	background-color:#FBA93D;
+}
+.btn.finish{
+	background-color:#B1CB36;
+}
+.btn.next:hover,.btn.skip:hover,.btn.finish:hover{
+	background-color:#fff;
+}
+.btn.next:hover{
+	border-color: #3B5998;
+	color:#3B5998;
+}
+.btn.skip:hover{
+	border-color: #FBA93D;
+	color:#FBA93D;
+}
+.btn.finish:hover{
+	border-color: #B1CB36;
+	color:#B1CB36;
+}
+label[for="promocode"] {
+   cursor:pointer;
+}

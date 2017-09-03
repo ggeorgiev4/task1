@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Task 1 - Responsive Design</title>
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" rel="stylesheet">
+	<link href="assets/css/style.css" rel="stylesheet" type="text/css">
+
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.form/4.2.2/jquery.form.min.js"></script>
+	<script type="text/javascript" src="assets/js/custom.js"></script>
+</head>
+<body>
+	<header>
+		<h2 class="text-center">Task 1 - Responsive Design</h1>
+	</header>
+	<section id="main">
+		<div class="mx-auto col-xs-12 col-sm-10 col-md-8 col-lg-6">
+			<form id="form_step1">
+				<h3 class="text-center">Step 1</h3>
+				<div class="form-group">
+					<label for="email">Email address</label> <input class="form-control" required id="email" placeholder="Enter email" type="email">
+					<small class="hidden warning" id="warning_email">Please enter E-mail address correctly.</small>
+				</div>
+				<div class="form-group">
+					<label for="first_name">First name</label> <input class="form-control" required id="first_name" placeholder="Enter first name" type="text">
+				</div>
+				<div class="form-group">
+					<label for="username">Username (min. 4 characters, max. 12 characters)</label> <input class="form-control" minlength="4" maxlength="12" required id="username" placeholder="Enter username" type="text">
+					<small class="hidden warning" id="warning_username">Please enter Username correctly.</small>
+				</div>
+				<div class="form-group">
+					<label for="password">Password (min.6 characters, max. 12 characters, one uppercase character, one lowercase character, one number or special character)</label> <input class="form-control" minlength="6" maxlength="12" required id="password" placeholder="Password" type="password">
+					<small class="hidden warning" id="warning_password">Please enter Password correctly.</small>
+				</div>
+				<div class="form-check">
+					<label class="form-check-label"><input class="form-check-input" required type="checkbox"> By checking this box, I agree to <a href="#">Terms & Conditions</a> of the site.</label>
+					<small class="hidden warning" id="warning_terms">This field is required.</small>
+				</div>
+				<a href="#" class="btn btn-primary next" id="gotostep2">Next step</a>
+			</form>
+			<div id="step2" class="hidden">
+				<h3 class="text-center">You’re ready to play!</h3>
+				<h5 class="text-center mb-5">In order to play with real money, you will need to provide more information. You can do so now if you wish, or skip and do it at a later time.</h5>
+				<a href="#" id="gotostep3" class="btn btn-primary next">Continue Registration</a>
+				<a href="http://www.casino.com/" class="btn btn-warning skip float-right">Skip</a>
+			</div>
+			<form id="form_step3" class="hidden">
+				<h3 class="text-center">Step 3</h3>
+				<div class="form-group">
+					<label for="addr1">Address line 1</label> <input class="form-control" required id="addr1" placeholder="Address line 1" type="text">
+					<small class="hidden warning" id="warning_addr1">Please fill up this field</small>
+				</div>
+				<div class="form-group">
+					<label for="addr2">Address line 2</label> <input class="form-control" required id="addr2" placeholder="Address line 2" type="text">
+					<small class="hidden warning" id="warning_addr2">Please fill up this field</small>
+				</div>
+				<div class="form-group">
+					<label for="city">City</label> <input class="form-control" required id="city" placeholder="City" type="text">
+					<small class="hidden warning" id="warning_city">Please fill up this field</small>
+				</div>
+				<div class="form-group">
+					<label for="country">Country</label> <input class="form-control" required id="country" placeholder="Country" type="text">
+					<small class="hidden warning" id="warning_country">Please fill up this field</small>
+				</div>
+				<div class="form-group">
+					<label for="postalcode">Postal Code</label> <input class="form-control" required id="postalcode" placeholder="Postal Code" type="text">
+					<small class="hidden warning" id="warning_postalcode">Please fill up this field</small>
+				</div>
+				<div class="form-group">
+					<label for="phone">Phone number</label> <input class="form-control" required id="phone" placeholder="Phone number" type="number">
+					<small class="hidden warning" id="warning_phone">Please fill up this field</small>
+				</div>
+				<div class="form-group">
+					<label for="promocode">Do you have a bonus code? Click here.</label> <input class="form-control hidden" id="promocode" placeholder="Promo code" type="text">
+				</div>
+				<div class="form-check">
+					<label class="form-check-label"><input class="form-check-input" required type="checkbox"> Checkbox</label>
+					<small class="hidden warning" id="warning_checkbox">This field is required.</small>
+				</div>
+				<a href="#" class="btn btn-primary next" id="gotostep4">Last step</a>
+			</form>
+			<div id="step4" class="hidden">
+				<h3 class="text-center">Thank you!</h3>
+				<h5 class="text-center mb-5">You can now play with real money. Have fun, and good luck!</h5>
+				<a href="http://www.casino.com/casino-games/" class="btn btn-primary next">Play Now</a>
+				<a href="http://www.casino.com/promotions/" class="btn btn-success float-right finish">Promotions</a>
+			</div>
+		</div>
+	</section>
+</body>
+</html>
